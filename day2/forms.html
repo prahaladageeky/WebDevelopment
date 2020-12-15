@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>forms</title>
+	<meta charset="utf-8">
+</head>
+<body bgcolor="lightgrey">
+
+<form action="" enctype="" method="post" target="_blank">  <!--action sends data to php file,method=post(secure) or get(sends in url) --->
+
+<label for="test">Read only textinput:</label><br>			<!---label takes id and foucus that id when label is clicked-->
+<input type="text" id="test" value="hello" name="test" readonly autofocus/><br>	<!--name is used to refer of form data and in radio butons-->
+
+<div>
+	<label for="input2">Textarea:</label><br>
+	<textarea id="input2" name="textarea" cols="30" rows="9"></textarea>
+</div>
+
+drop down groups:
+<div>
+	<select>
+		<optgroup label="ece">
+			<option>assembly</option>
+			<option>matlab</option>
+		</optgroup>
+		<optgroup label="cse">
+			<option>html</option>
+			<option>css</option>
+			<option>php</option>
+		</optgroup>
+	</select>
+</div>
+
+Datalist:
+<div>
+	<input list="cources">
+	<datalist id="cources">
+		<option value="html">
+		<option value="css">
+		<option value="php">
+		<option value="react js">	
+	</datalist>
+</div>
+
+<div>
+	<label for="h">Hidden:</label>
+	<input type="text" value="Hidden" id="h" hidden/>
+</div>
+
+MaxLength
+<div>
+	<input type="text" maxlength="2" />
+</div>
+
+Size
+<div>
+	<input type="text" size="40"/><!--size attribute Specifies the width of an <input> element, in characters. Default value is 20-->
+</div>
+
+Placeholder
+<div>
+	<input type="text" placeholder="Enter UserName" />
+</div>
+
+
+Step:
+<div>
+	<input type="number" step="4"/>
+</div>
+
+Min n max:
+<div>
+	<input type="date" min="2020-11-01" max="2020-12-31"/>
+</div>
+
+Required:
+<div>
+ <input type="text" required/>
+</div>
+
+Pattern:
+<div>
+ <input type="text" pattern=[A-Z]{2}/>
+</div>
+
+
+ Name 
+ <div>
+<input type="text" id="uname" name="uname">
+</div>
+
+Mobile No:
+ <div>
+<input type="number" id="no"  name="mobno">
+</div>
+
+Search:
+<div>
+<input type="search" id="s" name="search">
+</div>
+
+Email:
+<div>
+<input type="email" id="email" name="email">
+</div>
+
+Password
+<div>
+<input type="password">
+</div>
+UPload Resume:
+<div>
+<input type="file">
+</div>
+Courses:
+<div>
+	<input type="checkbox"> UI
+	<input type='checkbox'> JAVA
+</div>
+Options:
+<div>
+	<input type="radio" name="option"> Yes
+	<input type="radio" name="option"> No
+</div>
+Date:
+<div>
+	<input type="date"/>
+</div>
+Datetime-local:
+<div>
+	<input type="Datetime-local"/>
+</div>
+Month
+<div>
+	<input type="month"/>
+</div>
+time
+<div>
+	<input type="time"/>
+</div>
+URL
+<div>
+	<input type="url"/>
+</div>
+Color
+<div>
+	<input type="color"/>
+</div>
+
+<input type="reset"/>
+<input type="submit"/>
+
+
+	
+</form>
+
+</body>
+</html>
